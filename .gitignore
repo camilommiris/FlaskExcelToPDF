@@ -1,5 +1,6 @@
 #Repo content
-app/outputs/*
+app/outputs/*.pdf
+app/outputs/*.xlsx
 
 # Archivos y directorios generados por el sistema operativo
 .DS_Store
