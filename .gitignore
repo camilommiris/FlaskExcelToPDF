@@ -1,39 +1,44 @@
-#Repo content
-app/outputs/*.pdf
-app/outputs/*.xlsx
-
-# Archivos y directorios generados por el sistema operativo
+# ------------------------------------------
+# ------------------- OS -------------------
+# ------------------------------------------
+# MacOS
 .DS_Store
+.AppleDouble
+.LSOverride
 Thumbs.db
 
-# Archivos y directorios generados por Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.pyz
-*.pyzw
-*.py~
+# IDEs and editors
+.idea
+*.iml
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
+# IDE - VSCode
+.vscode*
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-# Entornos virtuales de Python
-venv/
-env/
+# ------------------------------------------
+# ----------------- NodeJS -----------------
+# ------------------------------------------
+package-lock.json
+node_modules
+*node_modules*
+.env
+.nyc_output
+coverage
+pnpm-lock.yaml
+yarn.lock
 
-# Dependencias instaladas
-/.venv/
-*.env/
-
-# Archivos de registro y bases de datos temporales
-*.log
-*.sqlite
-*.db
-
-# Carpeta de construcción de Docker
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.pyz
-*.pyzw
-*.py~
+# ------------------------------------------
+# ------------------ AWS -------------------
+# ------------------------------------------
+tmp/*
+!tmp/.gitkeep
