@@ -2,6 +2,7 @@ version: '3'
 services:
   web:
     build: .
+    command: ["python3", "app/controller.py"]
     ports:
       - "8080:5000"
     volumes:

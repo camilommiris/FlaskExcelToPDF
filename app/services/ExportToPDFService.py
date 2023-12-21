@@ -10,5 +10,6 @@ class ExportToPDFService:
 
   def exportFile(self):
     fileOutputPath = os.path.join(self._rootFolder, 'outputs', "{}.xlsx".format(self._fileName))
-    subprocess.run(["libreoffice --convert-to pdf {}".format(fileOutputPath)])
+    filePDFOutputPath = os.path.join(self._rootFolder, 'outputs')
+    subprocess.run(["libreoffice", "--convert-to", "pdf", fileOutputPath, "--outdir", filePDFOutputPath])
     return True

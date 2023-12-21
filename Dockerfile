@@ -4,6 +4,9 @@ FROM ubuntu:20.04
 # Establece el directorio de trabajo en /app
 WORKDIR /app
 
+# Establece la variable de entorno DEBIAN_FRONTEND para evitar la interacción con el usuario durante la instalación
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Actualiza el sistema y luego instala Python y las bibliotecas de LibreOffice
 RUN apt-get update && \
     apt-get install -y python3 python3-pip libreoffice && \
