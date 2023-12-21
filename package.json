@@ -1,0 +1,20 @@
+{
+  "name": "exceltopdf",
+  "version": "1.0.0",
+  "description": "POC to convert excel to pdf",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "env-cmd -f ./test/.env mocha -t 15000 --recursive --reporter=spec",
+    "test:coverage": "env-cmd -f ./test/.env nyc --reporter=lcov --reporter=cobertura --reporter=text mocha -t 15000 --recursive --reporter=spec --reporter mocha-junit-reporter --reporter-options mochaFile=./coverage/test-report.xml",
+    "test:local": "env-cmd -f ./test/.env node ./test/local/index.js",
+    "install:dev": "rm -rf node_modules/ && npm install",
+    "install:prod": "rm -rf node_modules/ && npm install --only=prod",
+    "eslint": "standard --fix"
+  },
+  "author": "Juan Camilo Martinez Morales",
+  "license": "MIT",
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
