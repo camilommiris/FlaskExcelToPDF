@@ -1,3 +1,6 @@
+#Repo content
+app/outputs/*
+
 # Archivos y directorios generados por el sistema operativo
 .DS_Store
 Thumbs.db
