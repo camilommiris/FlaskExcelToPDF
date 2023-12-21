@@ -1,0 +1,35 @@
+# Archivos y directorios generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos y directorios generados por Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyzw
+*.py~
+
+
+# Entornos virtuales de Python
+venv/
+env/
+
+# Dependencias instaladas
+/.venv/
+*.env/
+
+# Archivos de registro y bases de datos temporales
+*.log
+*.sqlite
+*.db
+
+# Carpeta de construcción de Docker
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyzw
+*.py~
